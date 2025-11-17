@@ -1,0 +1,72 @@
+:root {
+    --primary: #007bff;
+    --danger: #d9534f;
+    --light: #f8f9fa;
+    --dark: #333;
+    --border: #ddd;
+    --radius: 6px;
+    --font: Arial, sans-serif;
+}
+
+body {
+    background: var(--light);
+    font-family: var(--font);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 550px;
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px #0002;
+}
+
+h1, h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+button {
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button.danger {
+    background: var(--danger);
+}
+
+.project-card {
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: var(--radius);
+    margin: 10px 0;
+}
+
+.project-card button {
+    margin-right: 8px;
+}
